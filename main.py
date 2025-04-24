@@ -109,11 +109,11 @@ def menu():
         opcion = input("\nElige una opción: ")
 
         if opcion == '1':
-            estrategia = input("\n¿Deseas cambiar de puerta? (si/no): ").strip().lower()
+            estrategia = input("\n¿Deseas cambiar de puerta? (si/no): ").lower()
             estrategia_elegida = True if estrategia == 'si' else False
             MontyHall(estrategia_elegida)
         elif opcion == '2':
-            estrategia = input("\n¿Deseas cambiar de puerta? (si/no): ").strip().lower()
+            estrategia = input("\n¿Deseas cambiar de puerta? (si/no): ").lower()
             estrategia_elegida = True if estrategia == 'si' else False
             n = int(input("¿Cuántas jugadas deseas simular? (número entero): "))
             jugadas(n, estrategia_elegida)
